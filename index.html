@@ -5,6 +5,27 @@
 </head>
 
 <body>
+
+<div>
+<form name="myForm">
+    <label>Client Name:
+      <input type="text" name="input" ng-model="client_name">
+    </label>
+    <label>Email:
+      <input type="email" name="input" ng-model="client_email">
+    </label>
+        <label>Additional info:
+      <input type="text" name="input" ng-model="client_info">
+    </label>
+
+</form>
+
+<div>Client Name = {{client_name}}</div>
+<div>Client Email = {{client_email}}</div>
+<div>Additional info = {{client_info}}</div>
+
+</div>
+
 <div ng-controller="SelectController">
  <select ng-model="category" ng-options="c.name for c in sampleProductCategories" ng-change="drop2_5()"></select>
  <select ng-model="categoryItem" ng-options="p.name for p in category.products" ng-change="drop3_5()"></select>
@@ -13,7 +34,7 @@
  <select ng-model="level5" ng-options="o.value for o in level4.options"></select>
 
   <hr />
-
+  
   category={{category.name}}<br/>
   product={{categoryItem.name}}<br/>
   subChild={{subChild.value}}<br/>

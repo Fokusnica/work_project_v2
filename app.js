@@ -1,4 +1,5 @@
 var app =angular.module('chainSelect', [])
+
 app.controller('SelectController',function($scope){ 
   $scope.drop2_5 = function() {
    $scope.categoryItem = "";
@@ -29,7 +30,6 @@ app.controller('SelectController',function($scope){
     $scope.level4 = "";
     $scope.level5 = "";
   }
-
 
   // Data taken from KnockoutJs cart example
   $scope.sampleProductCategories = [
