@@ -6,11 +6,11 @@
 
 <body>
 <div ng-controller="SelectController">
- <select ng-model="category" ng-options="c.name for c in sampleProductCategories"></select>
- <select ng-model="categoryItem" ng-options="p.name for p in category.products"></select>
- <select ng-model="subChild" ng-options="o.value for o in categoryItem.options" ng-change=""></select>
- <select ng-model="level4" ng-options="o.value for o in subChild.options"></select>
- <select ng-model="level5" ng-options="o.value for o in level4.options"></select>>
+ <select ng-model="category" ng-options="c.name for c in sampleProductCategories" ng-change="drop2_5()"></select>
+ <select ng-model="categoryItem" ng-options="p.name for p in category.products" ng-change="drop3_5()"></select>
+ <select ng-model="subChild" ng-options="o.value for o in categoryItem.options" ng-change="drop4_5()"></select>
+ <select ng-model="level4" ng-options="o.value for o in subChild.options" ng-change="drop_5()"></select>
+ <select ng-model="level5" ng-options="o.value for o in level4.options"></select>
 
   <hr />
 

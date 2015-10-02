@@ -1,6 +1,26 @@
 var app =angular.module('chainSelect', [])
 app.controller('SelectController',function($scope){ 
-
+  $scope.drop2_5 = function() {
+   $scope.categoryItem = "";
+    $scope.subChild = "";
+    $scope.level4 = "";
+    $scope.level5 = "";
+  }
+   $scope.drop3_5 = function() {
+   
+    $scope.subChild = "";
+    $scope.level4 = "";
+    $scope.level5 = "";
+  } 
+   $scope.drop4_5 = function() {
+   
+    $scope.level4 = "";
+    $scope.level5 = "";
+  } 
+    $scope.drop_5 = function() {
+   
+    $scope.level5 = "";
+  } 
 
   $scope.resetDropDown = function() {
     $scope.category = "";
@@ -10,7 +30,7 @@ app.controller('SelectController',function($scope){
     $scope.level5 = "";
   }
 
- 
+
   // Data taken from KnockoutJs cart example
   $scope.sampleProductCategories = [
   {
